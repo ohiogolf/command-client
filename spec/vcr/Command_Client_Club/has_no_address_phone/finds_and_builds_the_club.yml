@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<COMPANY_NAME>.commandsystem.org/command/?club_number=999616&operation=getclub&page=api&pw=<PASSWORD>%21&un=<COMPANY_NAME>.org
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Wed, 30 Jan 2019 22:36:24 GMT
+      content-type:
+      - text/xml;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      x-powered-by:
+      - PHP/5.6.40, PleskLin
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma:
+      - no-cache
+      set-cookie:
+      - PHPSESSID=q656tg9ba3h3jcg1eomm6b86h0; expires=Thu, 31-Jan-2019 06:36:24 GMT;
+        Max-Age=28800; path=/
+    body:
+      encoding: UTF-8
+      string: "<result><success>true</success><message></message><club_name>Test Club
+        Aaron 3</club_name><architect></architect><year_founded>0</year_founded><cltid>0</cltid><club_type>None</club_type><handicap_club_type></handicap_club_type><club_number>999616</club_number><rid>0</rid><craid>0</craid><club_gender></club_gender><number_of_holes>0</number_of_holes><cid>804606</cid><addresses></addresses><phones></phones><functions></functions><texts></texts><urls></urls><images></images><facilities></facilities></result>"
+    http_version: 
+  recorded_at: Wed, 30 Jan 2019 22:36:24 GMT
+recorded_with: VCR 4.0.0
