@@ -19,7 +19,7 @@ See the `docs` folder of this repository for API information.
 Add the following to your `Gemfile`:
 
 ``` ruby
-gem 'command-client'
+gem 'command-client', git: "git://github.com/ohiogolf/command-client"
 ```
 
 ## Usage
