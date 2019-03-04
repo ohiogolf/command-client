@@ -1,6 +1,8 @@
 module Command
   module Client
-    class Ping < Base
+    class Ping
+      include Requestable
+
       operation "testlogin"
     end
   end

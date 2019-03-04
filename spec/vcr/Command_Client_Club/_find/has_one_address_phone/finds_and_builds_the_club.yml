@@ -17,7 +17,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Wed, 30 Jan 2019 22:36:24 GMT
+      - Fri, 08 Mar 2019 18:29:11 GMT
       content-type:
       - text/xml;charset=UTF-8
       transfer-encoding:
@@ -33,7 +33,7 @@ http_interactions:
       pragma:
       - no-cache
       set-cookie:
-      - PHPSESSID=fqlbirgaef2ab1g3vtsjrkjfa5; expires=Thu, 31-Jan-2019 06:36:24 GMT;
+      - PHPSESSID=mppihtbns4cqc42b6f17i8fff7; expires=Sat, 09-Mar-2019 02:29:11 GMT;
         Max-Age=28800; path=/
     body:
       encoding: UTF-8
@@ -41,5 +41,5 @@ http_interactions:
         Aaron 2</club_name><architect></architect><year_founded>0</year_founded><cltid>0</cltid><club_type>None</club_type><handicap_club_type></handicap_club_type><club_number>999615</club_number><rid>0</rid><craid>0</craid><club_gender></club_gender><number_of_holes>0</number_of_holes><cid>804605</cid><addresses><address><street1>123
         Main Street</street1><street2></street2><street3></street3><city>Test</city><state>OH</state><zip>55555</zip><country>US</country><type>Home</type><primary>true</primary></address></addresses><phones><phone><number>555-555-5555</number><extension></extension><type>Home</type><primary>true</primary></phone></phones><functions></functions><texts></texts><urls><url><url>https://www.example.com</url><type>Website</type></url></urls><images></images><facilities></facilities></result>"
     http_version: 
-  recorded_at: Wed, 30 Jan 2019 22:36:24 GMT
+  recorded_at: Fri, 08 Mar 2019 18:29:11 GMT
 recorded_with: VCR 4.0.0

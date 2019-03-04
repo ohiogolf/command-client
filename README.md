@@ -40,6 +40,12 @@ club.club_number # 1
 club.club_name # Golf Club of America
 club.architect # Jimmy Jones
 club.addresses.first.street # 123 Main Street
+
+# search golf clubs
+clubs = Command::Client::Club.search(club_name: "Stone")
+clubs.size # 2
+clubs[0].club_name # Stoney Creek Golf Club
+clubs[1].club_name # Stone Throw Country Club
 ```
 
 ## Development

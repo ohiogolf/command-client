@@ -1,17 +1,33 @@
 module Command
     module Client
       class Phone
+        include Requestable
+
         attr_reader :extension, :number, :primary, :type
 
-        def self.many(props)
-          [props].compact.flatten.map { |attrs| new(attrs) }
+        def initialize(attrs, compact: false)
+          if compact
+            build_compact(attrs)
+          else
+            build_general(attrs)
+          end
         end
 
-        def initialize(attrs)
-          @type = attrs["type"]
+        def build_compact(attrs)
+          @extension = attrs["extension"]
+          @number = attrs["phone"]
+          @type = attrs["phone_type"]
+        end
+
+        def build_general(attrs)
+          @extension = attrs["extension"]
           @number = attrs["number"]
           @primary = attrs["primary"]
-          @extension = attrs["extension"]
+          @type = attrs["type"]
+        end
+
+        def worthless?
+          number.nil?
         end
       end
     end

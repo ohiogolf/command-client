@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<COMPANY_NAME>.commandsystem.org/command/?club_name=Football+of+America&facility=%27%27&operation=searchclub&page=api&pw=<PASSWORD>%21&un=<COMPANY_NAME>.org
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Fri, 08 Mar 2019 18:29:10 GMT
+      content-type:
+      - text/xml;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      x-powered-by:
+      - PHP/5.6.40, PleskLin
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma:
+      - no-cache
+      set-cookie:
+      - PHPSESSID=da2n37auostcnu3fhmbd1nej64; expires=Sat, 09-Mar-2019 02:29:10 GMT;
+        Max-Age=28800; path=/
+    body:
+      encoding: UTF-8
+      string: "<result><success>true</success><sql>\n\t\tselect c.contact_status,cc.*,\n\t\ta.street1,a.street2,a.street3,a.city,a.state,a.zip,a.country
+        from contact_club as cc\n\t\tinner join contact as c on c.cid=cc.cid\n\t\tleft
+        join address as a on a.cid=cc.cid\n\t\t\n\t\twhere (a.primary_address or a.primary_address
+        is null) and facility=''\n\t\t and club_name like 'Football of America%' \n\t\torder
+        by club_name\n\t\t</sql><row_count>0</row_count><clubs></clubs></result>"
+    http_version: 
+  recorded_at: Fri, 08 Mar 2019 18:29:10 GMT
+recorded_with: VCR 4.0.0

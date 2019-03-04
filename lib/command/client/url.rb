@@ -1,11 +1,9 @@
 module Command
     module Client
       class Url
-        attr_reader :url, :type
+        include Requestable
 
-        def self.many(props)
-          [props].compact.flatten.map { |attrs| new(attrs) }
-        end
+        attr_reader :url, :type
 
         def initialize(attrs)
           @type = attrs["type"]

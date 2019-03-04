@@ -1,5 +1,8 @@
-require "command/client/base"
 require "command/client/version"
+require "command/client/errors"
+
+require "command/client/requestable"
+require "command/client/request"
 
 require "command/client/address"
 require "command/client/club"

@@ -17,7 +17,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Wed, 30 Jan 2019 22:36:24 GMT
+      - Fri, 08 Mar 2019 18:29:11 GMT
       content-type:
       - text/xml;charset=UTF-8
       transfer-encoding:
@@ -33,12 +33,12 @@ http_interactions:
       pragma:
       - no-cache
       set-cookie:
-      - PHPSESSID=q656tg9ba3h3jcg1eomm6b86h0; expires=Thu, 31-Jan-2019 06:36:24 GMT;
+      - PHPSESSID=kecvebs260u62op7a5e42q5gb6; expires=Sat, 09-Mar-2019 02:29:11 GMT;
         Max-Age=28800; path=/
     body:
       encoding: UTF-8
       string: "<result><success>true</success><message></message><club_name>Test Club
         Aaron 3</club_name><architect></architect><year_founded>0</year_founded><cltid>0</cltid><club_type>None</club_type><handicap_club_type></handicap_club_type><club_number>999616</club_number><rid>0</rid><craid>0</craid><club_gender></club_gender><number_of_holes>0</number_of_holes><cid>804606</cid><addresses></addresses><phones></phones><functions></functions><texts></texts><urls></urls><images></images><facilities></facilities></result>"
     http_version: 
-  recorded_at: Wed, 30 Jan 2019 22:36:24 GMT
+  recorded_at: Fri, 08 Mar 2019 18:29:11 GMT
 recorded_with: VCR 4.0.0

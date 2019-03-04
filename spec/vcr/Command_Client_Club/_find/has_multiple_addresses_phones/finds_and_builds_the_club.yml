@@ -17,7 +17,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Wed, 30 Jan 2019 22:36:24 GMT
+      - Fri, 08 Mar 2019 18:28:52 GMT
       content-type:
       - text/xml;charset=UTF-8
       transfer-encoding:
@@ -33,7 +33,7 @@ http_interactions:
       pragma:
       - no-cache
       set-cookie:
-      - PHPSESSID=6gd1g3dtlpkdg90p10kg9drrg3; expires=Thu, 31-Jan-2019 06:36:24 GMT;
+      - PHPSESSID=j29gmenmqutinnemrlkhla3gv0; expires=Sat, 09-Mar-2019 02:28:52 GMT;
         Max-Age=28800; path=/
     body:
       encoding: UTF-8
@@ -43,5 +43,5 @@ http_interactions:
         Test Street</street1><street2>Apt. Test</street2><street3>c/o Tester Test</street3><city>Test</city><state>OH</state><zip>43130</zip><country>US</country><type>Business</type><primary>false</primary></address><address><street1>123
         Test Street</street1><street2>Street Test</street2><street3>C/O Testing</street3><city>Test</city><state>OH</state><zip>33333</zip><country>US</country><type>Shipping</type><primary>true</primary></address></addresses><phones><phone><number>555-555-5555</number><extension>555</extension><type>Business</type><primary>true</primary></phone><phone><number>444-444-4444</number><extension>444</extension><type>Clubhouse</type><primary>true</primary></phone></phones><functions></functions><texts></texts><urls><url><url>https://www.example.com</url><type>Website</type></url><url><url>https://www.example.com</url><type>Website</type></url></urls><images></images><facilities></facilities></result>"
     http_version: 
-  recorded_at: Wed, 30 Jan 2019 22:36:24 GMT
+  recorded_at: Fri, 08 Mar 2019 18:28:52 GMT
 recorded_with: VCR 4.0.0
