@@ -46,6 +46,10 @@ clubs = Command::Client::Club.search(club_name: "Stone")
 clubs.size # 2
 clubs[0].club_name # Stoney Creek Golf Club
 clubs[1].club_name # Stone Throw Country Club
+
+# return all golf clubs
+clubs = Command::Client::Club.all
+clubs.size # 244
 ```
 
 ## Development
@@ -56,7 +60,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/command-client.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ohiogolf/command-client.
 
 ## License
 

@@ -10,6 +10,10 @@ module Command
       :year_founded, :addresses, :functions, :texts, :urls, :images,
       :facilities, :phones
 
+      def self.all
+        search(club_name: "%")
+      end
+
       def self.search(params={})
         query = { facility: "''" }.merge(params)
         request = Request.new(operation: "searchclub", params: query).call

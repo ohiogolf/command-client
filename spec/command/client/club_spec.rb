@@ -71,4 +71,10 @@ RSpec.describe Command::Client::Club, :vcr do
       end
     end
   end
+
+  context ".all" do
+    it "returns all Clubs from Command" do
+      expect(Command::Client::Club.all.size).to be > 30
+    end
+  end
 end
